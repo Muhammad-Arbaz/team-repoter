@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+    <form class="Login-form" action="" method="post" name="form" onsubmit="return validated()">
+        <label> Enter Email
+            <input  id="mail" type="email" placeholder="Email id" class="input" required="Please Enter the Email" />
+        </label>
+      
+        <label>Password
+            <input id="password" type="Password" placeholder="Password" class="input" required="Please 6 Character Password"/>
+        </label>
+        <a href="welcome.html"><button class="button" value="submit">Login</button></a>
+        <p class="message">Don't have an Account? <br/>
+        <a href="sign_up.html"> Sign Up </a></p>
+    </form>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
